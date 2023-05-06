@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Addition Calculator</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Addition Calculator</h1>
+      <h1
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding-top: 10px;
+        "
+      >
+        Basic Calculator
+      </h1>
       <form>
         <div class="form-group">
           <label for="num1">Enter first number:</label>
@@ -22,6 +29,8 @@
         <span>
           <button type="button" onclick="add()">+</button>
           <button type="button" onclick="sub()">-</button>
+          <button type="button" onclick="mul()">x</button>
+          <button type="button" onclick="div()">/</button>
         </span>
       </form>
       <div class="output" id="output"></div>
